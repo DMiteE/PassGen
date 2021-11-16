@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KeyGen.exe" version="1.0.0.2" publicKeyToken="8b891360e8ae63db" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="pngegg.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KeyGen" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KeyGen.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KeyGen.exe" size="67032">
+      <assemblyIdentity name="KeyGen" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>99TAGeBG0KJd2zh2JJoxqkcirjcjpbM4ZiF1ghqanwo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="KeyGen.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pngegg.ico" size="14066">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s5ltDtT1UPHFcNSZlAXkoKiV9QbhoScib3fIaujNKl8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-BCA4O9F\User" issuerKeyHash="dc06b09722bcd2e1f0a04625813a0e122713a703" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2c8BMHw6502BFV+TNiEzkRWwWeD0uSDHmA47iKrXPTQ=</DigestValue></Reference></SignedInfo><SignatureValue>QmSHT9jUNslUls0MKuSe6u5+w9gqerXw2VRErqPdfrjNX6JExfX+1iMhoL7RDRBz/ckEa4cZCBeyEiEzCxBpngfEXBbf89r3C5hlORHxc2AKEW9oABYK+n1zpKV2qUNKIW4wxwbntlncEdhgrbqO46LM7YVgIlgjG1CGc8bEOL0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qpVMOTnMfqh8CQO8FUeIdOSGWtUq0Evwt8PdJulrZVH4CmEbFgjYqzRri9YUg8o/ckxVxsQ8RLScPh9U5i7Dz+DVd7qxMEtwiDx3VpaI23oxyQlOyRCepRZPKIYKX8VySN3LLULN5yUPHf0KJWah/fLMayg0lQ8DL42QqEJjejU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="343dd7aa883b0e98c720b9f4e059b01591332136935f15814de73a7c3001cfd9" Description="" Url=""><as:assemblyIdentity name="KeyGen.exe" version="1.0.0.2" publicKeyToken="8b891360e8ae63db" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-BCA4O9F\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QtDG64ibZs1DZCWOhm8yPRcVfuRkYZk0BgzyZjU6qY8=</DigestValue></Reference></SignedInfo><SignatureValue>cFbTkjA2A4QE0hmDBrcVQoStknqcNTz0bneuqmInAPhwBRvksQ46P2HJANC5Z5MFpBwcDbRpP6Eiithqdy4Nn4RK7yssU2xknbKHZ0ROkl9u0VMQi3KYL1E5OyWSqMjJWlTmBS4WjouFwETXeYntP7NNwobysu33D1HeTrXTb0o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qpVMOTnMfqh8CQO8FUeIdOSGWtUq0Evwt8PdJulrZVH4CmEbFgjYqzRri9YUg8o/ckxVxsQ8RLScPh9U5i7Dz+DVd7qxMEtwiDx3VpaI23oxyQlOyRCepRZPKIYKX8VySN3LLULN5yUPHf0KJWah/fLMayg0lQ8DL42QqEJjejU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQdbUjVg35LYZC9UcNOtmpzjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEIAQwBBADQATwA5AEYAXABVAHMAZQByMB4XDTIxMTExNDIyMjg1MFoXDTIyMTExNTA0Mjg1MFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBCAEMAQQA0AE8AOQBGAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqpVMOTnMfqh8CQO8FUeIdOSGWtUq0Evwt8PdJulrZVH4CmEbFgjYqzRri9YUg8o/ckxVxsQ8RLScPh9U5i7Dz+DVd7qxMEtwiDx3VpaI23oxyQlOyRCepRZPKIYKX8VySN3LLULN5yUPHf0KJWah/fLMayg0lQ8DL42QqEJjejUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAbtl1H5VAHOLgv7r0rYpKbw2DYaRnJLHXUN9VmZ16N0/JWvUeDM9aVdW9ZG/rhZ9X9bjxjeLDaWl8zQgGgTHFB9+VxQ4BUKGwQLQYoQipmFn0XtRMmuxTHp8GfvnOcW/yWOOvkwrpuMJ0OgQcoMb+Ig2WUANRMAro2fvBhwjeIFw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
